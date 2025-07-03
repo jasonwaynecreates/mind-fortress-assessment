@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Fortress Assessment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #CD853F, #B8860B);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            color: #B8860B;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+        
+        .privacy-notice {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+            border-left: 4px solid #B8860B;
+        }
+        
+        .question {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .question h3 {
+            color: #B8860B;
+            margin-bottom: 15px;
+        }
+        
+        .question label {
+            display: block;
+            margin-bottom: 10px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        .question label:hover {
+            background: #f5f5f5;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        .submit-btn {
+            background: #B8860B;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto;
+        }
+        
+        .submit-btn:hover {
+            background: #CD853F;
+        }
+        
+        .results {
+            display: none;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            border: 2px solid #B8860B;
+        }
+        
+        .master-prompt {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-family: monospace;
+            white-space: pre-line;
+            margin-top: 15px;
+        }
+        
+        .copy-btn {
+            background: #CD853F;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏰 Mind Fortress Assessment</h1>
+        <p class="subtitle">Your Personal AI Spiritual Warfare System</p>
+        
+        <div class="privacy-notice">
+            <strong>This assessment is completely anonymous.</strong> Your responses are used only to generate your personalized training system and are not stored or connected to your identity. Answer honestly - this is between you and God.
+        </div>
+        
+        <form id="assessmentForm">
+            <div class="question">
+                <h3>Which areas of your mind are under the heaviest attack? (Select all that apply)</h3>
+                <label><input type="checkbox" name="battleZones" value="Trauma thoughts from past experiences"> Trauma thoughts from past experiences</label>
+                <label><input type="checkbox" name="battleZones" value="Anxiety about future outcomes"> Anxiety about future outcomes</label>
+                <label><input type="checkbox" name="battleZones" value="Self-worth and identity attacks"> Self-worth and identity attacks</label>
+                <label><input type="checkbox" name="battleZones" value="Fear-based thinking patterns"> Fear-based thinking patterns</label>
+                <label><input type="checkbox" name="battleZones" value="Obsessive worrying loops"> Obsessive worrying loops</label>
+                <label><input type="checkbox" name="battleZones" value="Comparison and jealousy spirals"> Comparison and jealousy spirals</label>
+                <label><input type="checkbox" name="battleZones" value="Anger and resentment cycles"> Anger and resentment cycles</label>
+            </div>
+            
+            <div class="question">
+                <h3>How do you prefer to receive guidance when you're struggling? (Select all that apply)</h3>
+                <label><input type="checkbox" name="communication" value="Direct and straightforward - give me the truth"> Direct and straightforward - give me the truth</label>
+                <label><input type="checkbox" name="communication" value="Gentle but firm - be kind but don't sugarcoat"> Gentle but firm - be kind but don't sugarcoat</label>
+                <label><input type="checkbox" name="communication" value="Heavy on Scripture - ground everything in God's Word"> Heavy on Scripture - ground everything in God's Word</label>
+                <label><input type="checkbox" name="communication" value="Practical action steps - tell me exactly what to do"> Practical action steps - tell me exactly what to do</label>
+                <label><input type="checkbox" name="communication" value="Encourage me to fight - warrior language and mindset"> Encourage me to fight - warrior language and mindset</label>
+            </div>
+            
+            <div class="question">
+                <h3>What specific lies hit you the hardest? (Select all that apply)</h3>
+                <label><input type="checkbox" name="lies" value="I'm worthless and nobody cares about me"> I'm worthless and nobody cares about me</label>
+                <label><input type="checkbox" name="lies" value="I'm stupid and can't do anything right"> I'm stupid and can't do anything right</label>
+                <label><input type="checkbox" name="lies" value="Everyone secretly hates me or thinks I'm annoying"> Everyone secretly hates me or thinks I'm annoying</label>
+                <label><input type="checkbox" name="lies" value="I'll never amount to anything significant"> I'll never amount to anything significant</label>
+                <label><input type="checkbox" name="lies" value="I'm damaged goods and can't be fixed"> I'm damaged goods and can't be fixed</label>
+                <label><input type="checkbox" name="lies" value="God is disappointed in me and I'm beyond help"> God is disappointed in me and I'm beyond help</label>
+                <label><input type="checkbox" name="lies" value="I'm a burden to everyone around me"> I'm a burden to everyone around me</label>
+                <label><input type="checkbox" name="lies" value="I'm not good enough compared to others"> I'm not good enough compared to others</label>
+                <label><input type="checkbox" name="lies" value="Something terrible is going to happen"> Something terrible is going to happen</label>
+                <label><input type="checkbox" name="lies" value="I can't trust anyone or anything"> I can't trust anyone or anything</label>
+            </div>
+            
+            <button type="submit" class="submit-btn">Generate My Mind Fortress Prompt</button>
+        </form>
+        
+        <div id="results" class="results">
+            <h3>🏰 Your Personalized Mind Fortress Master Prompt</h3>
+            <p>Copy this prompt and paste it into Claude at <a href="https://claude.ai" target="_blank">claude.ai</a> to begin building your spiritual warfare system:</p>
+            <div id="masterPrompt" class="master-prompt"></div>
+            <button onclick="copyPrompt()" class="copy-btn">Copy Prompt to Clipboard</button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('assessmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            generatePrompt();
+        });
+        
+        function generatePrompt() {
+            const battleZones = Array.from(document.querySelectorAll('input[name="battleZones"]:checked')).map(el => el.value);
+            const communication = Array.from(document.querySelectorAll('input[name="communication"]:checked')).map(el => el.value);
+            const lies = Array.from(document.querySelectorAll('input[name="lies"]:checked')).map(el => el.value);
+            
+            const prompt = `Claude, I need you to act as my spiritual warfare training partner for building an unbreakable mind fortress.
+
+I struggle with: ${battleZones.join(', ')}
+
+When these thoughts attack, I want you to help me:
+1. Identify the lies vs. the truth in what I'm thinking
+2. Find specific Bible verses that counter these lies
+3. Create deployment strategies to use these verses when I'm under attack
+4. Build a training plan to memorize and practice these truths
+
+My communication preferences: ${communication.join(', ')}
+
+The specific lies that hit me hardest are: ${lies.join(', ')}
+
+Help me transform my mind into a fortress that automatically responds to enemy attacks with God's truth. When I'm struggling, I'll share my thoughts with you, and you help me systematically destroy them with Scripture.
+
+Ready to start training?`;
+
+            document.getElementById('masterPrompt').textContent = prompt;
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
+        }
+        
+        function copyPrompt() {
+            const promptText = document.getElementById('masterPrompt').textContent;
+            navigator.clipboard.writeText(promptText).then(function() {
+                alert('Prompt copied to clipboard! Now go to claude.ai and paste it.');
+            }, function(err) {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
